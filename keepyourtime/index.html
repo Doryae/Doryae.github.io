@@ -12,9 +12,9 @@
             <span class="logo">KeepYourTime</span>
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">Fonctionnalités</a></li>
-                <li><a href="#">Tarifs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#fonctionnality">Fonctionnalités</a></li>
+                <li><a href="#price">Tarifs</a></li>
+                <li><a href="mailto:contact@keeyourtime.dev" title="Attention, ce site est fictif !">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@
         </article>
     </section>
 
-    <section class="advantage">
+    <section id="fonctionnality" class="advantage">
         <h2>Profitez des nombreux avantages KeepYourTime</h2>
         <article>
             <div class="card-advantage">
@@ -56,13 +56,46 @@
         </article>
     </section>
 
+    <section>
+        <h2>Profitez de l'expérience <span>maintenant</span> !</h2>
+        <article id="price">
+            <div class="card-price">
+                <h3>Basic</h3>
+                <span class="price">Gratuit</span>
+                <ul>
+                    <li class="valid">Plan détaillé pour économiser votre temps</li>
+                    <li class="invalid">Planning sur mesure</li>
+                    <li class="invalid">Automatisation de vos tâches</li>
+                    <li class="invalid">Conseiller disponible à tout instant</li>
+                    <li class="invalid">Mesure du temps gagné grâce à nos services</li>
+                </ul>
+                <button class="getIt"><span>Démarrer maintenant !</span></button>
+            </div>
+            <div class="card-price">
+                <h3>Premium</h3>
+                <div class="align-price">
+                    <span class="price">5</span><img src="img/prinnies-price.png" alt="Un prinny qui fait office de monnaie d'échange">
+                    <span class="price"> / mois</span>
+                </div>
+                <ul>
+                    <li class="valid">Plan détaillé pour économiser votre temps</li>
+                    <li class="valid">Planning sur mesure</li>
+                    <li class="valid">Automatisation de vos tâches</li>
+                    <li class="valid">Conseiller disponible à tout instant</li>
+                    <li class="valid">Mesure du temps gagné grâce à nos services</li>
+                </ul>
+                <button class="getIt"><span>Démarrer maintenant !</span></button>
+            </div>
+        </article>
+    </section>
+
     <footer>
         <span class="logo">KeepYourTime</span>
         <p>
             © 2025 - Tous droits réservés
         </p>
-        <p>
-            contact@keeyourtime.dev
+        <p id="contact">
+            contact@keepyourtime.dev
         </p>
     </footer>
 

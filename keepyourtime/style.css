@@ -70,7 +70,7 @@ nav {
     padding: 30px 0 30px 50px;
 }
 
-ul {
+nav ul {
     width: 500px;
     position:absolute;
     right: 50px;
@@ -79,7 +79,7 @@ ul {
     align-self: center;
 }
 
-ul li {
+nav ul li {
     display: inline-block;
 }
 
@@ -98,6 +98,10 @@ Sections
 section {
     margin: 45px auto;
     text-align: center;
+}
+
+section:last-of-type {
+    margin-bottom: 150px;
 }
 
 h1, h1 span {
@@ -139,8 +143,11 @@ button:active {
     transform: translateY(3px);
 }
 
-h2 {
+h2, h2 span {
     font-size: 1.7rem;
+}
+
+h2 {
     padding: 15px;
     border: var(--positive) 3px solid;
     border-radius: 10px;
@@ -151,6 +158,10 @@ h2 {
 h3 {
     font-size: 1.4rem;
 }
+
+/*==================================
+Fonctionnality
+==================================*/
 
 .advantage article {
     display: flex;
@@ -180,6 +191,95 @@ i {
     padding: 15px 25px;
 }
 
+/*==================================
+Price
+==================================*/
+
+#price {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-price {
+    border-radius: 8px;
+    box-shadow: var(--positive) 0 0 2px;
+    min-width: 350px;
+    max-width: 450px;
+    flex-wrap: wrap;
+}
+
+.card-price h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+article ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+article ul li {
+    line-height: 45px;
+}
+
+article ul li:last-of-type {
+    margin-bottom: 50px;
+}
+
+.valid {
+    color: var(--text);
+}
+
+.invalid {
+    color: lightgray;
+    text-decoration: line-through;
+}
+
+.align-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-price button {
+    background-color: var(--positive);
+    border: none;
+    box-shadow: var(--secondary-color) 0 0 3px;
+    margin-bottom: 35px;
+}
+
+.card-price button span {
+    color: var(--text-light);
+}
+
+.card-price button:hover {
+    background-color: var(--background);
+    border: var(--positive) 2px solid;
+    transform: scale(1.2);
+}
+
+.card-price button:hover span {
+    color: var(--positive);
+}
+
+.card-price button:active {
+    transform: translateY(5px);
+}
 
 
 /*==================================
@@ -221,7 +321,7 @@ responsive
     }
     
     
-    ul {
+    nav ul {
         flex-direction: column;
         align-items: end;
         right: 15px;
@@ -249,11 +349,11 @@ responsive
 }
 
 @media (max-width: 500px) {
-    .logo, ul {
+    .logo, nav ul {
         margin: auto;
     }
 
-    ul {
+    nav ul {
         width: 100%;
         right: 0;
         flex-direction: row;
