@@ -281,6 +281,91 @@ img {
     transform: translateY(5px);
 }
 
+/*==================================
+thought section
+==================================*/
+
+.thought .logo {
+    padding: 0;
+}
+
+.thought {
+    margin: 60px auto;
+}
+
+.thought-container {
+    max-width: 600px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 0 15px;
+    padding: 30px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slides-thought {
+    display: flex;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    padding: 20px;
+}
+
+.slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.customer-thought {
+    text-align: justify;
+    padding: 0 35px;
+    font-size: 1rem;
+}
+
+cite {
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+#slide1:checked ~ .slides-thought {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .slides-thought {
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .slides-thought {
+    transform: translateX(-200%);
+}
+
+.thought-nav {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.thought-nav label {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+#slide1:checked ~ .thought-nav label[for="slide1"],
+#slide2:checked ~ .thought-nav label[for="slide2"], 
+#slide3:checked ~ .thought-nav label[for="slide3"] {
+    background: var(--positive);
+}
 
 /*==================================
 footer
