@@ -68,6 +68,10 @@ section h2 {
     text-align: center;
 }
 
+article {
+    margin-bottom: 25px;
+}
+
 h3 {
     position: relative;
     font-size: 22px;
@@ -96,7 +100,7 @@ a {
     color: #F1935C;
 }
 
-.steam {
+button {
     display: block;
     margin: auto;
     padding: 10px 15px;
@@ -107,17 +111,17 @@ a {
     transition: all .7s ease;
 }
 
-.steam a {
+button a {
     text-decoration: none;
     color: black;
 }
 
-.steam:hover{
+button:hover{
     background-color: #1B2838;
     border: 2px solid transparent;
     cursor: pointer;
 }
 
-.steam:hover a {
+button:hover a {
     color: #F1935C;
 }
