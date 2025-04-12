@@ -162,6 +162,18 @@ h3 {
     color: #00D4D4;
 }
 
+#color h3:nth-of-type(6) {
+    color: #555B63;
+}
+
+#color h3:nth-of-type(7) {
+    color: #149C90;
+}
+
+#color h3:nth-of-type(8) {
+    color: #E74C3C;
+}
+
 
 .color-container {
     display: flex;
@@ -241,7 +253,7 @@ Hexadimal part + Positionning for color-card
     background-color: #B6BCC2;
 }
 
-.pinky {
+.salmon {
     background-color: #FFB5A7;
 }
 
@@ -309,7 +321,91 @@ Hexadimal part + Positionning for color-card
     background-color: #00D4D4;
 }
 
-.dark-darkgray, .very-darkgray, .white, .light-gray, .orange-soft, .blue-gray, .blue-dark, .blue-white, .frost-gray, .ice-blue, .very-lightgray, .pastel-gray, .light-anthracite, .gray, .pinky, .soft-mint, .vanilla, .lavender, .almostwhite, .soft-gray, .darkish, .light-darkgray, .cool-blue, .petroleum, .slate-purple, .terracotta, .dark-teal, .very-dark-teal, .light-cyan, .gray-cyan, .deep-cyan {
+.mist-gray {
+    background-color: #D3D3D8;
+}
+
+.stone-gray {
+    background-color: #A6A9AD;
+}
+
+.ash-tint {
+    background-color: #F2F3F5;
+}
+
+.slate-charcoal {
+    background-color: #555B63;
+}
+
+.soft-green {
+    background-color: #A3D9A5;
+}
+
+.moss-green {
+    background-color: #6FBF73;
+}
+
+.light-graygreen {
+    background-color: #E9F6EA;
+}
+
+.olive-gray {
+    background-color: #5E7765;
+}
+
+.bright-teal {
+    background-color: #2EC4B6;
+}
+
+.deep-turquoise {
+    background-color: #149C90;
+}
+
+.light-aqua {
+    background-color: #CFF8F4;
+}
+
+.ivory-white {
+    background-color: #FDFDF9;
+}
+
+.pearl-gray {
+    background-color: #EBEFF0;
+}
+
+.cool-snow {
+    background-color: #F6F9F9;
+}
+
+.warm-red {
+    background-color: #E74C3C;
+}
+
+.deep-maroon {
+    background-color: #8B2E2E;
+}
+
+.rose-tint {
+    background-color: #FDECEA;
+}
+
+.pale-salmon {
+    background-color: #FAB8B2;
+}
+
+.soft-burntorange {
+    background-color: #E89F71;
+}
+
+.cool-clay {
+    background-color: #B86B6B;
+}
+
+.dark-darkgray, .very-darkgray, .white, .light-gray, .orange-soft, .blue-gray, .blue-dark, .blue-white, .frost-gray, .ice-blue, 
+.very-lightgray, .pastel-gray, .light-anthracite, .gray, .salmon, .soft-mint, .vanilla, .lavender, .almostwhite, .soft-gray, .darkish, 
+.light-darkgray, .cool-blue, .petroleum, .slate-purple, .terracotta, .dark-teal, .very-dark-teal, .light-cyan, .gray-cyan, .deep-cyan,
+.mist-gray, .stone-gray, .ash-tint, .slate-charcoal, .soft-green, .moss-green, .light-graygreen, .olive-gray, .bright-teal, .deep-turquoise,
+.light-aqua, .ivory-white, .pearl-gray, .cool-snow, .warm-red, .deep-maroon, .rose-tint, .pale-salmon, .soft-burntorange, .cool-clay {
     display: flex;
     flex-direction: column;
     justify-content: center;
