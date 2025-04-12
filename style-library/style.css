@@ -47,9 +47,10 @@ section {
 }
 
 .anchor-top {
+    z-index: 2;
     cursor: pointer;
     position: fixed;
-    top: 90vh;
+    bottom: 150px;
     right: 3%;
     width: 50px;
     height: 50px;
@@ -105,6 +106,7 @@ ul {
 #elements {
     display: flex;
     justify-content: center;
+    padding: 20px 0px;
 }
 
 li a {
@@ -127,7 +129,7 @@ section {
 }
 
 h2, h3 {
-    padding: 15px 0 15px 50px;
+    padding: 15px 50px 15px 50px;
     font-weight: 500;
     font-family: "Inter";
 }
@@ -517,6 +519,156 @@ article p {
 }
 
 /* =============================================
+Buttons Section
+==============================================*/
+#buttons h4 {
+    text-align: center;
+}
+
+.subtitle {
+    padding-left: 50px;
+}
+
+.button-container {
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.button-container p {
+    font-size: 20px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.style span, .collection span, .font span {
+    font-size: 24px;
+    font-family: "Satisfy";
+    line-height: 38px;
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.charcoal-style {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #555B63;
+    background-color: #F2F3F5;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 3px;
+}
+
+.charcoal-style:hover {
+    background-color: #A3D9A5;
+    transform: scale(1.1);
+}
+
+.charcoal-style:active {
+    transform: scale(0.9);
+}
+
+.double-button {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 3px;
+}
+
+.double-button .charcoal-style:hover  {
+    box-shadow: none;
+    transform: scale(1);
+}
+
+.double-button .charcoal-style:hover svg {
+    animation: rotate .5s ease-in-out;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
+
+/* =============================================
+Footer
+==============================================*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    border-top: 2px solid #444;
+}
+
+footer p {
+    font-size: 25px;
+    padding: 0 25px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 70px;
+    height: 70px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.css-container, .html-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.css-container span:first-of-type {
+    z-index: 1;
+    position: relative;
+    bottom: -35px;
+    left: 5px;
+}
+
+.css, .html {
+    position: relative;
+    bottom: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.html {
+    bottom: 0px;
+}
+
+/* =============================================
 Responsive
 ==============================================*/
 
@@ -528,15 +680,23 @@ Responsive
     a .anchor-top {
         right: 1%;
         font-size: 20px;
-        top: 95vh;
+        bottom: 150px;
         width: 30px;
         height: 30px;
+    }
+
+    footer p {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 729px) {
     main {
         width: 85%;
+    }
+
+    h2, h3 {
+        padding: 15px 10px 15px 10px;
     }
 }
 
@@ -547,6 +707,11 @@ Responsive
 
     .color-container {
         justify-content: center;
+    }
+
+    .button-container, aside {
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -559,8 +724,16 @@ Responsive
         display: none;
     }
 
+    ul li a{
+        font-size: 16px;
+    }
+
     section {
         border-left: none;
         border-right: none;
+    }
+
+    .logo-footer {
+        flex-direction: column;
     }
 }
