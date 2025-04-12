@@ -1,0 +1,470 @@
+/* Sans-Serif */
+@font-face {
+    font-family: "Inter";
+    src: url("res/fonts/sans-serif/Inter-VariableFont_whgt.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("res/fonts/sans-serif/Poppins-Regular.ttf") format("truetype");
+}   
+@font-face {
+    font-family: "Rubik";
+    src: url("res/fonts/sans-serif/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+/* Serif */
+@font-face {
+    font-family: "Lora";
+    src: url("res/fonts/serif/Lora-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("res/fonts/serif/Merriweather-VariableFont.ttf") format("truetype");
+}
+/* Manuscript */
+@font-face {
+    font-family: "Dancing Script";
+    src: url("res/fonts/manuscript/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Satisfy";
+    src: url("res/fonts/manuscript/Satisfy-Regular.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Poppins";
+}
+
+section {
+    margin: 20px auto;
+}
+
+.anchor-top {
+    cursor: pointer;
+    position: fixed;
+    top: 90vh;
+    right: 3%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #A8B6C1;
+    background-color: #E6EEF3;
+}
+
+a .anchor-top, a:visited .anchor-top {
+    color: #1B252F;
+    font-size: 30px;
+}
+
+.message {
+    color: #F7F9FA;
+    background-color: #005F73;
+    font-family: "Satisfy";
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =============================================
+Header & Navbar
+==============================================*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+img {
+    width: auto;
+    height: 40px;
+    transform: translate(-15px, 5px);
+}
+
+h1 {
+    font-family: "Lora";
+    font-weight: 700;
+    font-size: 40px;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+#elements {
+    display: flex;
+    justify-content: center;
+}
+
+li a {
+    color: #121;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li:hover a {
+    text-decoration: underline;
+}
+
+/* =============================================
+Colors Section
+==============================================*/
+
+section {
+    border: 2px solid #444;
+}
+
+h2, h3 {
+    padding: 15px 0 15px 50px;
+    font-weight: 500;
+    font-family: "Inter";
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+/* Title colorization for the color section */
+
+#color h3:nth-of-type(1) {
+    color: #F4A261;
+}
+
+#color h3:nth-of-type(2) {
+    color: #5DB9EE;
+}
+
+#color h3:nth-of-type(3) {
+    color: #B6BCC2;
+}
+
+#color h3:nth-of-type(4) {
+    color: #005F73;
+}
+
+#color h3:nth-of-type(5) {
+    color: #00D4D4;
+}
+
+
+.color-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.color-container p {
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.light-text {
+    color:#F4F4F2;
+}
+
+/* =============================================
+Hexadimal part + Positionning for color-card
+==============================================*/
+
+.dark-darkgray {
+    background-color: #1E2A33;
+}
+
+.very-darkgray {
+    background-color: #141C22;
+}
+
+.white {
+    background-color: #F4F4F2;
+}
+
+.light-gray {
+    background-color: #C4C7CA;
+}
+
+.orange-soft {
+    background-color: #F4A261;
+}
+
+.blue-gray {
+    background-color: #1B252F;
+}
+
+.blue-dark {
+    background-color: #11181F;
+}
+
+.blue-white {
+    background-color: #E6EEF3;
+}
+
+.frost-gray {
+    background-color: #A8B6C1;
+}
+
+.ice-blue {
+    background-color: #5DB9EE;
+}
+
+.very-lightgray {
+    background-color: #F2F2F2;
+}
+
+.pastel-gray {
+    background-color: #DCDCDC;
+}
+
+.light-anthracite {
+    background-color: #3C3C3C;
+}
+
+.gray {
+    background-color: #B6BCC2;
+}
+
+.pinky {
+    background-color: #FFB5A7;
+}
+
+.soft-mint {
+    background-color: #B5EAD7;
+}
+
+.vanilla {
+    background-color: #FFF3B0;
+}
+
+.lavender {
+    background-color: #C9D6FF;
+}
+
+.almostwhite {
+    background-color: #F7F9FA;
+}
+
+.soft-gray {
+    background-color: #D1D6DA;
+}
+
+.darkish {
+    background-color: #1A1A1A;
+}
+
+.light-darkgray {
+    background-color: #9AA5AE;
+}
+
+.cool-blue {
+    background-color: #007ACC;
+}
+
+.petroleum {
+    background-color: #005F73;
+}
+
+.slate-purple {
+    background-color: #6A5ACD;
+}
+
+.terracotta {
+    background-color: #D97A40;
+}
+
+.dark-teal {
+    background-color: #0F2B2D;
+}
+
+.very-dark-teal {
+    background-color: #071B1D;
+}
+
+.light-cyan {
+    background-color: #E0F7FA;
+}
+
+.gray-cyan {
+    background-color: #94BFC4;
+}
+
+.deep-cyan {
+    background-color: #00D4D4;
+}
+
+.dark-darkgray, .very-darkgray, .white, .light-gray, .orange-soft, .blue-gray, .blue-dark, .blue-white, .frost-gray, .ice-blue, .very-lightgray, .pastel-gray, .light-anthracite, .gray, .pinky, .soft-mint, .vanilla, .lavender, .almostwhite, .soft-gray, .darkish, .light-darkgray, .cool-blue, .petroleum, .slate-purple, .terracotta, .dark-teal, .very-dark-teal, .light-cyan, .gray-cyan, .deep-cyan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-width: 250px;
+    width: calc(-15px + 25%);
+    min-height: 100px;
+}
+
+/* =============================================
+Font Section
+==============================================*/
+
+/* Title fonts type for the fonts section */
+#fonts h3 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #3C3C3C;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+#fonts h3:nth-of-type(1) {
+    font-family: sans-serif;
+}
+
+#fonts h3:nth-of-type(2) {
+    font-family: serif;
+}
+
+#fonts h3:nth-of-type(3) {
+    font-family: "Satisfy";
+}
+
+article {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+article p {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.manuscript h4 {
+    font-size: 30px;
+}
+
+.manuscript p {
+    font-size: 25px;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* sans-serif */
+
+.inter {
+    font-family: "Inter";
+}
+
+.poppins {
+    font-family: "Poppins";
+}
+
+.rubik {
+    font-family: "Rubik";
+}
+
+/* serif */
+
+.lora {
+    font-family: "Lora";
+}
+
+.merriweather {
+    font-family: "Merriweather";
+}
+
+/* manuscript */
+
+.dancing-script {
+    font-family: "Dancing Script";
+}
+
+.satisfy {
+    font-family: "Satisfy";
+}
+
+/* =============================================
+Responsive
+==============================================*/
+
+@media (max-width: 1025px) {
+    main {
+        width: 90%;
+    }
+
+    a .anchor-top {
+        right: 1%;
+        font-size: 20px;
+        top: 95vh;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 729px) {
+    main {
+        width: 85%;
+    }
+}
+
+@media (max-width: 645px) {
+    header {
+        flex-direction: column;
+    }
+
+    .color-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 499px) {
+    main {
+        width: 100%;
+    }
+
+    a .anchor-top {
+        display: none;
+    }
+
+    section {
+        border-left: none;
+        border-right: none;
+    }
+}
