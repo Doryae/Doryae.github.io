@@ -35,7 +35,7 @@
             <!-- COLORS for All composants of a website, except maybe some error; or positive feedback. See UI COLORS for that. -->
             <h2>Colors</h2>
             <h3>Soft Ember</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="dark-darkgray color-card light-text">
                     <p class="color-label">Dark Gray</p>
                     <p class="color-hex">#1E2A33</p>
@@ -56,10 +56,10 @@
                     <p class="color-label">Orange Soft</p>
                     <p class="color-hex">#F4A261</p>
                 </div>
-            </div>
+            </article>
             
             <h3>Frosty</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="blue-gray color-card light-text">
                     <p class="color-label">Blue Gray</p>
                     <p class="color-hex">#1B252F</p>
@@ -80,10 +80,10 @@
                     <p class="color-label">Ice Blue</p>
                     <p class="color-hex">#5DB9EE</p>
                 </div>
-            </div>
+            </article>
 
             <h3>Softy</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="very-lightgray color-card">
                     <p class="color-label">Light Gray</p>
                     <p class="color-hex">#F2F2F2</p>
@@ -116,10 +116,10 @@
                     <p class="color-label">Lavender</p>
                     <p class="color-hex">#C9D6FF</p>
                 </div>
-            </div>
+            </article>
 
             <h3>Corpo</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="almostwhite color-card">
                     <p class="color-label">Almost White</p>
                     <p class="color-hex">#F7F9FA</p>
@@ -152,10 +152,10 @@
                     <p class="color-label">Terracotta</p>
                     <p class="color-hex">#D97A40</p>
                 </div>
-            </div>
+            </article>
 
             <h3>Cyan Paradise</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="dark-teal color-card light-text">
                     <p class="color-label">Dark Teal</p>
                     <p class="color-hex">#0F2B2D</p>
@@ -176,13 +176,13 @@
                     <p class="color-label">Deep Cyan</p>
                     <p class="color-hex">#00D4D4</p>
                 </div>
-            </div>
+            </article>
 
             <!-- UI COLORS -->
 
             <h2>Colors for Interactions</h2>
             <h3>Neutral</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="mist-gray color-card">
                     <p class="color-label">Mist Gray</p>
                     <p class="color-hex">#D3D3D8</p>
@@ -215,10 +215,10 @@
                     <p class="color-label">Olive Gray</p>
                     <p class="color-hex">#5E7765</p>
                 </div>
-            </div>
+            </article>
 
             <h3>Positive Interaction</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="bright-teal color-card">
                     <p class="color-label">Bright Teal</p>
                     <p class="color-hex">#2EC4B6</p>
@@ -243,10 +243,10 @@
                     <p class="color-label">Cool Snow</p>
                     <p class="color-hex">#F6F9F9</p>
                 </div>
-            </div>
+            </article>
 
             <h3>Negative Interaction</h3>
-            <div class="color-container">
+            <article class="color-container">
                 <div class="warm-red color-card light-text">
                     <p class="color-label">Warm Red</p>
                     <p class="color-hex">#E74C3C</p>
@@ -271,7 +271,7 @@
                     <p class="color-label">Cool Clay</p>
                     <p class="color-hex">#B86B6B</p>
                 </div>
-            </div>
+            </article>
         </section>
 
         <section id="fonts">
@@ -350,8 +350,8 @@
             <cite class="subtitle">Maintain your click for a bit !</cite>
 
             <h4>Classic</h4>
-            <div class="button-container">
-                <div>
+            <article class="button-container">
+                <div aria-description="A button that has no effect on click, it's just a graphic component.">
                     <button class="button charcoal-style">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
@@ -365,7 +365,7 @@
                     </button>
                 </div>
 
-                <div>
+                <div aria-description="A button that has no effect on click, it's just a graphic component.">
                     <button class="button charcoal-style">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
@@ -381,7 +381,7 @@
                     </button>
                 </div>
 
-                <div>
+                <div aria-description="A double button. They have no effects on click, it's just a graphic component.">
                     <button class="double-button">
                         <div class="button charcoal-style">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
@@ -409,7 +409,7 @@
                         </div>
                     </button>
                 </div>
-            </div>
+            </article>
 
             
             <aside>
@@ -423,12 +423,11 @@
 
     <footer>
         <div class="logo-footer">
-            <img src="res/img/logo.png" alt="Logo of a wolf with a red scarf">
             <p>© All rights Reserved. 2025</p>
         </div>
+
         <div class="language">
             <p>Developed only in</p>
-
 
             <div class="logo-container">
                 <div class="html-container">
@@ -439,6 +438,7 @@
                         </svg>
                     </span>
                 </div>
+
                 <div class="css-container">
                     <span>CSS</span>
                     <span class="css">
