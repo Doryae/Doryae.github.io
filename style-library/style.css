@@ -524,6 +524,7 @@ Buttons Section
 
 .subtitle {
     padding-left: 50px;
+    text-align: left;
 }
 
 .button-container {
@@ -531,6 +532,7 @@ Buttons Section
     margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     gap: 15px;
 }
 
@@ -543,6 +545,15 @@ aside {
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+cite {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px;
 }
 
 .style span, .collection span, .font span {
@@ -566,45 +577,182 @@ button {
     transition: all .3s ease-in-out;
 }
 
-.charcoal-style {
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #555B63;
-    background-color: #F2F3F5;
-    box-shadow: rgba(0, 0, 0, .3) 0 0 3px;
-}
-
-.charcoal-style:hover {
-    background-color: #A3D9A5;
-    transform: scale(1.1);
-}
-
-.charcoal-style:active {
-    transform: scale(0.9);
-}
-
 .double-button {
     display: flex;
     box-shadow: rgba(0, 0, 0, .3) 0 0 3px;
 }
 
-.double-button .charcoal-style:hover  {
+.double-buttonRounded, .double-button-phantom {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons STYLES */
+
+.button-classic, .button-classicRounded, .button-solid, .button-solidRounded, .button-phantom {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.button-classic {
+    font-family: "Rubik";
+    box-shadow: rgba(0, 0, 0, .3) 0 0 3px;
+}
+
+.button-classicRounded {
+    border-radius: 8px;
+    font-family: "Inter";
+    box-shadow: rgba(0, 0, 0, .3) 0 0 3px;
+}
+
+.button-solid, .button-solidRounded {
+    font-family: "Poppins";
+}
+
+.button-solidRounded {
+    border-radius: 8px;
+}
+
+.button-phantom, .button-phantomRounded {
+    background-color: transparent;
+    color: #1B252F;
+    font-family: "Lora";
+    box-shadow: rgba(27, 37, 47, .3) 0 0 2px;
+}
+
+.button-phantomRounded {
+    border-radius: 10px;
+}
+
+/* Buttons COLOR SCHEME */
+
+.buttons .charcoal {
+    color: #555B63;
+    background-color: #F2F3F5;
+}
+
+.buttons .deep-turquoise{
+    color: #149C90;
+    background-color: #F2F3F5;
+}
+
+.buttons .cool-blue {
+    color: #F6F9F9;
+    background-color: #007ACC;
+}
+
+.buttons .soft-green {
+    color: #3C3C3C;
+    background-color: #A3D9A5;
+}
+
+/* Button ON ACTION */
+/* CLASSIC */
+.button-classic:hover.charcoal {
+    background-color: #A3D9A5;
+    transform: scale(1.1);
+}
+
+.button-classic:active.charcoal {
+    transform: scale(0.9);
+}
+
+.double-button .button-classic:hover.charcoal  {
     box-shadow: none;
     transform: scale(1);
 }
 
-.double-button .charcoal-style:hover svg {
+.double-button .button-classic:hover.charcoal svg {
     animation: rotate .5s ease-in-out;
 }
 
-.double-button .charcoal-style:active svg{
+.double-button .button-classic:active.charcoal svg{
     animation: rotate .5s ease-in-out 1s 2;
     color: #F4F4F2;
 }
 
+/* CLASSIC ROUNDED */
+.button-classicRounded:hover.deep-turquoise{
+    background-color: #149C90;
+    color: #E0F7FA;
+    transform: scale(1.1);
+}
+
+.button-classicRounded:active.deep-turquoise {
+    transform: scale(.9);
+}
+
+.double-buttonRounded .button-classicRounded:hover.deep-turquoise svg {
+    animation: rotate .5s ease-in-out;
+}
+
+/* SOLID */
+.button-solid:hover.cool-blue {
+    color:#007ACC;
+    background-color: #F6F9F9;
+    box-shadow: 0 0 2px #007ACC;
+}
+
+.double-button .button-solid:hover svg {
+    animation: rotate .5s ease-in-out;
+}
+
+.button-solid:active.cool-blue {
+    animation: vibration .5s ease-in-out;
+}
+
+/* SOLID ROUNDED */
+.button-solidRounded:hover.soft-green {
+    background-color: transparent;
+    box-shadow: 0 0 2px #3C3C3C;
+}
+
+.double-buttonRounded .button-solidRounded:hover svg {
+    animation: rotate .5s ease-in-out;
+}
+
+.button-solidRounded:active {
+    animation: vibration .5s ease-in-out;
+}
+
+/* PHANTOM & PHANTOM ROUNDED */
+
+.button-phantom:hover, .button-phantomRounded:hover {
+    transform: scale(1.2);
+}
+
+.double-button-phantom .button-phantom:hover svg, .double-button-phantom .button-phantomRounded:hover svg {
+    animation: rotate .5s ease-out;
+}
+
+.button-phantom:active, .button-phantomRounded:active {
+    animation: shadow .5s ease-in-out;
+}
+
+/* Animations for Buttons */
+
 @keyframes rotate {
     100% {transform: rotate(360deg);}
+}
+
+@keyframes vibration {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(2px);}
+    50% {transform: translateY(0px);}
+    75% {transform: translateY(-2px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes shadow {
+    0% {box-shadow: 0 0 2px rgba(27, 37, 47, .3);}
+    10% {box-shadow: 0 0 2px rgba(27, 37, 47, .5);}
+    20% {box-shadow: 0 0 2px rgba(27, 37, 47, .7);}
+    30% {box-shadow: 0 0 3px rgba(27, 37, 47, .85);}
+    50% {box-shadow: 0 0 3px rgba(27, 37, 47, 1);}
+    70% {box-shadow: 0 0 3px rgba(27, 37, 47, .85);}
+    80% {box-shadow: 0 0 2px rgba(27, 37, 47, .7);}
+    90% {box-shadow: 0 0 2px rgba(27, 37, 47, .5);}
+    100% {box-shadow: 0 0 2px rgba(27, 37, 47, .3);}
 }
 
 /* =============================================
