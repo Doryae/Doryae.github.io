@@ -589,7 +589,7 @@ button {
 
 /* Buttons STYLES */
 
-.button-classic, .button-classicRounded, .button-solid, .button-solidRounded, .button-phantom {
+.button-classic, .button-classicRounded, .button-solid, .button-solidRounded, .button-phantom, .button-phantomRounded {
     font-size: 18px;
     text-transform: uppercase;
 }
