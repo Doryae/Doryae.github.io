@@ -87,7 +87,7 @@ header {
 
 img {
     width: auto;
-    height: 40px;
+    height: 150px;
     transform: translate(-15px, 5px);
 }
 
@@ -193,6 +193,16 @@ h3 {
 
 .light-text {
     color:#F4F4F2;
+}
+
+.color-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-width: 250px;
+    width: calc(-15px + 25%);
+    min-height: 100px;
 }
 
 /* =============================================
@@ -401,20 +411,6 @@ Hexadimal part + Positionning for color-card
 
 .cool-clay {
     background-color: #B86B6B;
-}
-
-.dark-darkgray, .very-darkgray, .white, .light-gray, .orange-soft, .blue-gray, .blue-dark, .blue-white, .frost-gray, .ice-blue, 
-.very-lightgray, .pastel-gray, .light-anthracite, .gray, .salmon, .soft-mint, .vanilla, .lavender, .almostwhite, .soft-gray, .darkish, 
-.light-darkgray, .cool-blue, .petroleum, .slate-purple, .terracotta, .dark-teal, .very-dark-teal, .light-cyan, .gray-cyan, .deep-cyan,
-.mist-gray, .stone-gray, .ash-tint, .slate-charcoal, .soft-green, .moss-green, .light-graygreen, .olive-gray, .bright-teal, .deep-turquoise,
-.light-aqua, .ivory-white, .pearl-gray, .cool-snow, .warm-red, .deep-maroon, .rose-tint, .pale-salmon, .soft-burntorange, .cool-clay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    min-width: 250px;
-    width: calc(-15px + 25%);
-    min-height: 100px;
 }
 
 /* =============================================
