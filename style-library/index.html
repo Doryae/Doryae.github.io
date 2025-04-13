@@ -338,7 +338,7 @@
         <nav id="elements">
             <ul>
                 <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#">Inputs</a></li>
+                <li><a href="#inputs">Inputs</a></li>
                 <li><a href="#">Animations</a></li>
             </ul>
         </nav>
@@ -349,7 +349,7 @@
             <h3>You can try to hover & click them !</h3>
             <cite class="subtitle">Maintain your click for a bit !</cite>
 
-            <h4>Classic Rounded</h4>
+            <h4>Classic</h4>
             <article class="button-container">
                 <div aria-description="A button that has no effect on click, it's just a graphic component.">
                     <button class="button button-classic charcoal">
@@ -764,6 +764,61 @@
             </aside>
 
         </section>
+
+        <section id="inputs">
+            <h2>Inputs</h2>
+            <h3>Try it to see the visual feedback</h3>
+            <cite class="subtitle">Visual feedback on : Focus / Invalid / Valid</cite>
+
+            <article class="inputs">
+
+                <div class="inputs-container input-classic">
+                    <h4>Classic</h4>
+                    <form name="classic">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" minlength="2" maxlength="20" required>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" minlength="2" maxlength="30" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="exemple@test.try" required>
+                        <button class="button button-phantom" type="submit" >Send</button>
+                    </form>
+                </div>
+
+                <div class="inputs-container input-underline">
+                    <h4>Underline</h4>
+                    <form name="underline">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" minlength="2" maxlength="20" required>
+                        <span class="underline"></span>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" minlength="2" maxlength="30" required>
+                        <span class="underline"></span>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="exemple@test.try" required>
+                        <span class="underline"></span>
+                        <button class="button button-phantom" type="submit" >Send</button>
+                    </form>
+                </div>
+
+                <div class="inputs-container input-filled">
+                    <h4>Filled</h4>
+                    <form name="filled">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" minlength="2" maxlength="20" required>
+                        <span class="underline"></span>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" minlength="2" maxlength="30" required>
+                        <span class="underline"></span>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="exemple@test.try" required>
+                        <span class="underline"></span>
+                        <button class="button button-phantom" type="submit" >Send</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+
     </main>
 
     <footer>
