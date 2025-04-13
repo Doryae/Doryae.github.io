@@ -597,6 +597,11 @@ button {
     animation: rotate .5s ease-in-out;
 }
 
+.double-button .charcoal-style:active svg{
+    animation: rotate .5s ease-in-out 1s 2;
+    color: #F4F4F2;
+}
+
 @keyframes rotate {
     100% {transform: rotate(360deg);}
 }
