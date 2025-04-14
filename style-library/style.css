@@ -85,7 +85,7 @@ header {
     padding: 15px 0;
 }
 
-img {
+header img {
     width: auto;
     height: 150px;
     transform: translate(-15px, 5px);
@@ -1037,6 +1037,102 @@ Animations
 }
 
 /* =============================================
+Card
+==============================================*/
+#demonstration article {
+    margin: 25px 0;
+}
+
+.card-one {
+    width: 290px;
+    font-family: "Rubik";
+    color: #555B63; /*slate charcoal*/
+    background-color: #F2F2F2; /* Light Gray */
+    box-shadow: rgba(85, 91, 99, .5) 0 0 10px; /*slate charcoal rgba */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-one .header {
+    color: #EBEFF0; /* Pearl Gray */
+    background-color: #8B2E2E; /* Deep Maroon */
+}
+
+.card-one .header img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #EBEFF0; /* Pearl Gray */
+    margin-bottom: 10px;
+}
+
+.card-one .header p {
+    text-align: center;
+}
+
+.card-one aside p {
+    font-size: 16px;
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+.card-one aside span {
+    font-size: 35px;
+    font-family: "Dancing Script";
+    color: #8B2E2E; /* Deep Maroon */
+}
+
+.card-one h3 {
+    font-size: 25px;
+    color: #EBEFF0; /* Pearl Gray */
+    background-color: #8B2E2E; /* Deep Maroon */
+}
+
+.card-one .social {
+    margin: 10px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-one .social .button-classic {
+    background-color: #F2F3F5; /* Ash-Tint */
+    box-shadow: rgba(0, 0, 0, .3) 0 0 3px; /* Black, 30% opacity */
+    transition: all .3s ease-in-out;
+}
+
+.card-one .social .button-classic:hover svg{
+    animation: rotate 1s ease-in-out;
+}
+
+.card-one .social .button-classic:active {
+    animation: dingleling 1s ease-in-out;
+}
+
+/* SCOPE */
+
+.card-one-scope {
+    min-width: 300px;
+    max-width: 550px;
+}
+
+.card-one-scope h2 {
+    font-size: 25px;
+    text-decoration: underline;
+    margin: 10px auto;
+}
+
+.card-one-scope p {
+    padding: 0 25px;
+    font-size: 18px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+/* =============================================
 Footer
 ==============================================*/
 
@@ -1155,8 +1251,9 @@ Responsive
         display: none;
     }
 
-    ul li a{
-        font-size: 16px;
+    ul {
+        margin: 25px auto;
+        flex-direction: column;
     }
 
     section {
