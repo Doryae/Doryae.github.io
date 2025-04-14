@@ -929,6 +929,114 @@ input {
 }
 
 /* =============================================
+Animations
+==============================================*/
+
+.animations {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.single-animation-container {
+    width: 280px;
+    height: 280px;
+    margin: 20px 0;
+    box-shadow: rgba(85, 91, 99, 1) 0 0 3px;
+    text-align: center;
+}
+
+.single-animation-container h4 {
+    width: 95%;
+    margin: 10px auto;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+}
+
+/* Spinning Loader */
+
+.spinning-loader {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: #005F73 3px solid;
+    border-radius: 50%;
+    border-top: transparent 2px solid;
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+    0% {transform:rotate(0deg);}
+    25% {transform:rotate(90deg);}
+    50% {transform:rotate(180deg);}
+    75% {transform:rotate(270deg);}
+    100% {transform:rotate(360deg);}
+}
+
+/* Bouncing Ball */
+
+.boucing-ball {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    transform: translateY(70px);
+    background-color: #fab890;
+    box-shadow: #D97A40 3px -50px 20px 4px inset;
+    animation: bounce 1s infinite linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(50px);
+        box-shadow: rgba(85, 91, 99, .3) 0 20px 3px, #D97A40 3px -50px 20px 4px inset;
+    }
+    45% {
+        transform: translateY(70px);
+        box-shadow: rgba(85, 91, 99, .4) 0 0px 0px, #D97A40 3px -50px 20px 4px inset;
+    }
+    55% {
+        transform: translateY(70px);
+        box-shadow: rgba(85, 91, 99, .4) 0 0px 0px, #D97A40 3px -50px 20px 4px inset;
+    }
+    75% {
+        transform: translateY(0px);
+        box-shadow: rgba(85, 91, 99, .2) 0 50px 10px 8px, #D97A40 3px -50px 20px 4px inset;
+    }
+    100% {
+        transform: translateY(50px);
+        box-shadow: rgba(85, 91, 99, .3) 0 20px 3px, #D97A40 3px -50px 20px 4px inset;
+    } 
+}
+
+/* Dingle Ling */
+
+.dingle-ling {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.dingle-ling svg{
+    width: 80px;
+    height: 80px;
+    animation: dingleling .5s infinite linear;
+}
+
+@keyframes dingleling {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(15deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* =============================================
 Footer
 ==============================================*/
 
