@@ -1113,24 +1113,135 @@ Card
 
 /* SCOPE */
 
-.card-one-scope {
+.card-scope {
     min-width: 300px;
     max-width: 550px;
+    border-bottom: #000 2px solid;
 }
 
-.card-one-scope h2 {
+.card-scope h2 {
     font-size: 25px;
     text-decoration: underline;
-    margin: 10px auto;
+    margin: 0px auto 10px;
 }
 
-.card-one-scope p {
+.card-scope p {
     padding: 0 25px;
     font-size: 18px;
     text-align: justify;
     text-overflow: ellipsis;
     margin-bottom: 5px;
 }
+
+.card-scope a {
+    color: #E89F71;
+    text-decoration: none;
+}
+
+/* CARD - TWO */
+.card-two {
+    width: 290px;
+    color: #071B1D; /* Very Dark Teal */
+    background-color: #E0F7FA; /* Light Cyan */
+    box-shadow: rgba(7, 27, 29, .5) 0 0 3px;
+    align-self: center;
+}
+
+.card-two .header {
+    color: #0F2B2D; /* Dark Teal */
+    background-color: #00D4D4; /* Deep Cyan */
+    border-bottom: 2px solid #071B1D; /* Very Dark Teal */
+}
+
+.card-two label {
+    color: #071B1D; /* Very Dark Teal */
+}
+
+.card-two input {
+    background-color: #F6F9F9; /* Cool Snow */
+}
+
+.card-two .button-solid {
+    background-color: #00D4D4; /* Deep Cyan */
+}
+
+.card-two .button-solid:hover {
+    color: #F6F9F9; /* Cool Snow */
+    background-color: #149C90; /* Deep Turquoise */
+    transform: scale(1.1);
+}
+
+.card-two .button-solid:active {
+    transform: scale(0.9)
+}
+
+/* CARD THREE */
+
+.card-three {
+    align-self: center;
+    text-align: center;
+    width: 290px;
+    height: 500px;
+    color: #141C22; /* Very Dark Gray */
+    background: no-repeat url(res/img/product-card.jpg) center / cover;
+    overflow: hidden;
+    box-shadow: #3C3C3C 0 0 5px;
+}
+
+.card-three .indicator {
+    z-index: 3;
+    position: relative;
+    top: -480px;
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    background-color: #F6F9F9; /* Cool Snow */
+    opacity: 1;
+    transition: all .3s;
+}
+
+.card-three .card-hidden {
+    z-index: 3;
+    height: 100%;
+    position: relative;
+    top: 500px;
+    background: no-repeat rgba(211, 211, 216, .6); /* Mist Gray */
+    transition: all .8s;
+}
+
+.card-three .card-hidden p {
+    padding: 0 25px;
+    text-align: left;
+}
+
+.card-three .card-hidden .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    cursor: default;
+    margin: 10px auto;
+    background-color: #B5EAD7; /* Olive Gray */
+    color: #3C3C3C; /* Light Anthracite */
+    font-size: 25px;
+}
+
+.card-three .card-hidden .button-phantom {
+    padding: 25px;
+    width: 80%;
+    margin: 15px auto;
+    color: #E6EEF3; /* Blue White */
+    box-shadow: rgba(230, 238, 243, .5) 0 0 2px;
+}
+
+.card-three:hover .card-hidden {
+    transform: translateY(-500px);
+}
+
+.card-three:hover .indicator {
+    opacity: 0;
+} 
 
 /* =============================================
 Footer
