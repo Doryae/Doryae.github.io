@@ -1,18 +1,25 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_whgt.ttf") format="truetext";
+}
+
 :root {
-    --main-color: #4F46E5;
-    --secondary-color: #6366F1;
-    --text: #1F2937;
-    --text-light: #F3F4F6;
-    --background: #F9FAFB;
-    --head-foot: #111827;
-    --positive: #10B981;
+    --dark-gray: #1E2A33;
+    --very-dark-gray: #141C22;
+    --ash-tint: #F2F3F5;
+    --light-gray: #C4C7CA;
+    --orange-soft: #F4A261;
+    --slate-charcoal: #555B63;
+    --soft-green: #A3D9A5;
+    --cool-snow: #F6F9F9;
+    --deep-turquoise: #149C90;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
 }
 
@@ -21,37 +28,41 @@ General initialization
 ==================================*/
 
 body {
-    background-color: var(--background);
+    background-color: var(--ash-tint);
     line-height: 1.5;
-    color: var(--text);
+    color: var(--dark-gray);
     cursor: default;
 }
 
 header, footer {
-    color: var(--text-light);
-    background-color: var(--head-foot);
+    color: var(--ash-tint);
+    background-color: var(--very-dark-gray);
 }
 
 h1, h2, h3 {
     font-weight: 700;
-    margin: 0 20px;
+    margin: 20px;
 }
 
-h1, h2, h3, button {
-    color: var(--main-color);
+h1, h2, h3 {
+    color: var(--dark-gray);
+}
+
+button {
+    color: var(--deep-turquoise)
 }
 
 a {
-    color: var(--text-light);
+    color: var(--orange-soft);
     text-decoration: none;
 }
 
 a:hover, button:hover {
-    color: var(--secondary-color);
+    color: var(--cool-snow);
 }
 
 span {
-    color: var(--positive);
+    color: var(--deep-turquoise);
 }
 
 /*==================================
@@ -96,7 +107,7 @@ Sections
 ==================================*/
 
 section {
-    margin: 45px auto;
+    margin: 70px auto;
     text-align: center;
 }
 
@@ -121,22 +132,25 @@ button {
     margin-top : 15px;
     text-transform: uppercase;
     font-size: 1.5rem;
-    background-color: var(--main-color);
+    background-color: var(--deep-turquoise);
     padding: 15px;
-    border: 5px solid var(--secondary-color);
     border-radius: 8px;
-    box-shadow: var(--head-foot) 0 0 3px;
+    border: none;
+    box-shadow: var(--very-dark-gray) 0 0 3px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
+.link button {
+    color: var(--cool-snow);
+}
+
 button:hover {
-    background-color: var(--background);
-    border-color: var(--positive);
+    transform: scale(1.2);
 }
 
 button:hover a{
-    color: var(--positive);
+    color: var(--slate-charcoal);
 }
 
 button:active {
@@ -149,10 +163,10 @@ h2, h2 span {
 
 h2 {
     padding: 15px;
-    border: var(--positive) 3px solid;
+    border: var(--soft-green) 3px solid;
     border-radius: 10px;
     width: fit-content;
-    margin: 25px auto;
+    margin: 50px auto;
 }
 
 h3 {
@@ -180,7 +194,7 @@ i {
     max-width: 25%;
     height: 350px;
     border-radius: 8px;
-    box-shadow: var(--positive) 0 0 2px;
+    box-shadow: var(--slate-charcoal) 0 0 2px;
     margin-bottom: 75px;
     display: flex;
     flex-direction: column;
@@ -205,10 +219,14 @@ Price
 
 .card-price {
     border-radius: 8px;
-    box-shadow: var(--positive) 0 0 2px;
+    box-shadow: var(--slate-charcoal) 0 0 2px;
     min-width: 350px;
     max-width: 450px;
     flex-wrap: wrap;
+}
+
+.card-price:hover {
+    transform: translateY(-5px);
 }
 
 .card-price h3 {
@@ -233,11 +251,11 @@ article ul li:last-of-type {
 }
 
 .valid {
-    color: var(--text);
+    color: var(--dark-gray);
 }
 
 .invalid {
-    color: lightgray;
+    color: var(--light-gray);
     text-decoration: line-through;
 }
 
@@ -257,24 +275,23 @@ img {
 }
 
 .card-price button {
-    background-color: var(--positive);
+    background-color: var(--ash-tint);
     border: none;
-    box-shadow: var(--secondary-color) 0 0 3px;
+    box-shadow: var(--slate-charcoal) 0 0 3px;
     margin-bottom: 35px;
 }
 
 .card-price button span {
-    color: var(--text-light);
+    color: var(--orange-soft);
 }
 
 .card-price button:hover {
-    background-color: var(--background);
-    border: var(--positive) 2px solid;
+    background-color: var(--deep-turquoise);
     transform: scale(1.2);
 }
 
 .card-price button:hover span {
-    color: var(--positive);
+    color: var(--cool-snow);
 }
 
 .card-price button:active {
@@ -285,7 +302,8 @@ img {
 thought section
 ==================================*/
 
-.thought .logo {
+.thought .logo, .advantage .logo {
+    color: var(--deep-turquoise);
     padding: 0;
 }
 
@@ -330,7 +348,7 @@ input[type="radio"] {
 }
 
 cite {
-    color: var(--text);
+    color: var(--dark-gray);
     font-size: 1.2rem;
 }
 
@@ -355,7 +373,7 @@ cite {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: lightgray;
+    background-color: var(--light-gray);
     margin: 0 8px;
     cursor: pointer;
     transition: background .3s ease;
@@ -364,7 +382,7 @@ cite {
 #slide1:checked ~ .thought-nav label[for="slide1"],
 #slide2:checked ~ .thought-nav label[for="slide2"], 
 #slide3:checked ~ .thought-nav label[for="slide3"] {
-    background: var(--positive);
+    background: var(--orange-soft);
 }
 
 /*==================================
@@ -373,7 +391,6 @@ footer
 
 footer {
     width: 100%;
-    position: fixed;
     bottom: 0;
     display: flex;
     justify-content: space-around;
@@ -413,7 +430,7 @@ responsive
     }
 
     h1 {
-        margin-top: 25px;
+        margin: 25px 0;
     }
 
     section {
