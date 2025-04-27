@@ -203,7 +203,11 @@ h3 {
     gap: 10px;
     min-width: 250px;
     width: calc(-15px + 25%);
-    min-height: 100px;
+    min-height: 150px;
+}
+
+p.color-rgb {
+    font-size: .8rem;
 }
 
 /* =============================================
